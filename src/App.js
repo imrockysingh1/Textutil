@@ -63,7 +63,7 @@ function App(props) {
   return (
     
     <>
-     <Router>
+     <Router basename='textutils'>
     <Navbar title="Textutils" about="About" mode={mode} toggleMode={toggleMode} customThemeRed={customThemeRed} customThemeGreen={customThemeGreen} customThemeBrown={customThemeBrown}/>
     {/* <Navbar /> */}
     <Alert alert={alert}/> 
