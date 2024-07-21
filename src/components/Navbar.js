@@ -14,12 +14,12 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/about">{props.about}</Link>
+        {/* <li className="nav-item">
+          <a className="nav-link" href="#">{props.about}</a>
         </li>
-        
+         */}
       </ul>
       <button className='customTheme mx-2 '  onClick={props.customThemeRed} style={{borderRadius:'50%',height:'20px',backgroundColor:'red'}}></button>
       <button className='customTheme'  onClick={props.customThemeGreen} style={{borderRadius:'50%',height:'20px',backgroundColor:'green'}}></button>

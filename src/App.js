@@ -3,15 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForms from './components/TextForms';
-import About from './components/About';
+// import About from './components/About';
 import Alert  from './components/Alert';
 import React ,  { useState} from 'react';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 
 function App(props) {
   const [alert,setAlert]=useState(null);
@@ -63,17 +63,19 @@ function App(props) {
   return (
     
     <>
-     <Router basename='textutils'>
+     {/* <Router> */}
     <Navbar title="Textutils" about="About" mode={mode} toggleMode={toggleMode} customThemeRed={customThemeRed} customThemeGreen={customThemeGreen} customThemeBrown={customThemeBrown}/>
     {/* <Navbar /> */}
     <Alert alert={alert}/> 
    
-    <Routes>
+    {/* <Routes> */}
 
-          <Route exact path="/about" element={<About  mode={mode} toggleMode={toggleMode} customThemeRed={customThemeRed} customThemeGreen={customThemeGreen} customThemeBrown={customThemeBrown}/>}/>
-          <Route  exact path="/" element={<TextForms  showAlert={showAlert} heading="Enter the text to analyze " mode={mode}></TextForms>}/>
-        </Routes>
-        </Router>
+          {/* <Route exact path="/about" element={ */}
+            {/* <About  mode={mode} toggleMode={toggleMode} customThemeRed={customThemeRed} customThemeGreen={customThemeGreen} customThemeBrown={customThemeBrown}/>}/> */}
+          {/* <Route  exact path="/" element={ */}
+            <TextForms  showAlert={showAlert} heading="Enter the text to analyze " mode={mode}></TextForms>
+        {/* </Routes> */}
+        {/* </Router> */}
         
       </>
   );
